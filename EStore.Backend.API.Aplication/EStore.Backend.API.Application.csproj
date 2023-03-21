@@ -40,7 +40,6 @@
     <Folder Include="Commands\Client\Change\" />
     <Folder Include="Commands\Client\Include\" />
     <Folder Include="Commands\Company\Change\" />
-    <Folder Include="Commands\Company\Include\" />
     <Folder Include="Commands\Order\Change\" />
     <Folder Include="Commands\Order\Include\" />
     <Folder Include="Commands\Store\Change\" />
@@ -59,6 +58,10 @@
     <Folder Include="Queries\Team\List\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Company\Include\CommandIncludeCompany.cs" />
+    <Compile Include="Commands\Company\Include\CommandIncludeCompanyHandler.cs" />
+    <Compile Include="Commands\Company\Include\CommandIncludeCompanyResponse.cs" />
+    <Compile Include="Commands\Company\Include\CommandIncludeCompanyValidator.cs" />
     <Compile Include="Commands\Driver\Change\CommandChangeDriver.cs" />
     <Compile Include="Commands\Driver\Change\CommandChangeDriverHandler.cs" />
     <Compile Include="Commands\Driver\Change\CommandChangeDriverResponse.cs" />
@@ -83,6 +86,7 @@
     <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleHandler.cs" />
     <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleResponse.cs" />
     <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleValidator.cs" />
+    <Compile Include="Enumerators\AdressType.cs" />
     <Compile Include="Enumerators\ContractType.cs" />
     <Compile Include="Enumerators\DriversLicenceClass.cs" />
     <Compile Include="Enumerators\DriversLicenceType.cs" />
