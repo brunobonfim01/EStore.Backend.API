@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F044F8B9-32DD-4448-BF01-5D8761F24C21}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EStore.Backend.API.Aplication</RootNamespace>
+    <AssemblyName>EStore.Backend.API.Aplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\Client\Change\" />
+    <Folder Include="Commands\Client\Include\" />
+    <Folder Include="Commands\Company\Change\" />
+    <Folder Include="Commands\Company\Include\" />
+    <Folder Include="Commands\Order\Change\" />
+    <Folder Include="Commands\Order\Include\" />
+    <Folder Include="Commands\Store\Change\" />
+    <Folder Include="Commands\Store\Include\" />
+    <Folder Include="Commands\Team\Change\" />
+    <Folder Include="Commands\Team\Include\" />
+    <Folder Include="Queries\Client\Get\" />
+    <Folder Include="Queries\Client\List\" />
+    <Folder Include="Queries\Company\Get\" />
+    <Folder Include="Queries\Company\List\" />
+    <Folder Include="Queries\Order\Get\" />
+    <Folder Include="Queries\Order\List\" />
+    <Folder Include="Queries\Store\Get\" />
+    <Folder Include="Queries\Store\List\" />
+    <Folder Include="Queries\Team\Get\" />
+    <Folder Include="Queries\Team\List\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Driver\Change\CommandChangeDriver.cs" />
+    <Compile Include="Commands\Driver\Change\CommandChangeDriverHandler.cs" />
+    <Compile Include="Commands\Driver\Change\CommandChangeDriverResponse.cs" />
+    <Compile Include="Commands\Driver\Change\CommandChangeDriverValidator.cs" />
+    <Compile Include="Commands\Driver\Include\CommandIncludeDriver.cs" />
+    <Compile Include="Commands\Driver\Include\CommandIncludeDriverHandler.cs" />
+    <Compile Include="Commands\Driver\Include\CommandIncludeDriverResponse.cs" />
+    <Compile Include="Commands\Driver\Include\CommandIncludeDriverValidator.cs" />
+    <Compile Include="Commands\Person\Change\CommandChangePerson.cs" />
+    <Compile Include="Commands\Person\Change\CommandChangePersonHandler.cs" />
+    <Compile Include="Commands\Person\Change\CommandChangePersonResponse.cs" />
+    <Compile Include="Commands\Person\Change\CommandChangePersonValidator.cs" />
+    <Compile Include="Commands\Person\Include\CommandIncludePerson.cs" />
+    <Compile Include="Commands\Person\Include\CommandIncludePersonHandler.cs" />
+    <Compile Include="Commands\Person\Include\CommandIncludePersonResponse.cs" />
+    <Compile Include="Commands\Person\Include\CommandIncludePersonValidator.cs" />
+    <Compile Include="Commands\Vehicle\Change\CommandChangeVehicleHandler.cs" />
+    <Compile Include="Commands\Vehicle\Change\CommandChangeVehicle.cs" />
+    <Compile Include="Commands\Vehicle\Change\CommandChangeVehicleResponse.cs" />
+    <Compile Include="Commands\Vehicle\Change\CommandChangeVehicleValidator.cs" />
+    <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicle.cs" />
+    <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleHandler.cs" />
+    <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleResponse.cs" />
+    <Compile Include="Commands\Vehicle\Include\CommandIncludeVehicleValidator.cs" />
+    <Compile Include="Enumerators\ContractType.cs" />
+    <Compile Include="Enumerators\DriversLicenceClass.cs" />
+    <Compile Include="Enumerators\DriversLicenceType.cs" />
+    <Compile Include="Enumerators\EmployeeExperienceLevel.cs" />
+    <Compile Include="Enumerators\MaritalStatus.cs" />
+    <Compile Include="Enumerators\StatusService.cs" />
+    <Compile Include="Enumerators\VehicleBrand.cs" />
+    <Compile Include="Enumerators\VehicleType.cs" />
+    <Compile Include="Interfaces\IPagedList.cs" />
+    <Compile Include="Queries\Driver\Get\QueryGetDriver.cs" />
+    <Compile Include="Queries\Driver\Get\QueryGetDriverResponse.cs" />
+    <Compile Include="Queries\Driver\Get\QueryGetDriverValidator.cs" />
+    <Compile Include="Queries\Driver\Get\QueryGetDriverHandler.cs" />
+    <Compile Include="Queries\Driver\List\QueryListDriver.cs" />
+    <Compile Include="Queries\Driver\List\QueryListDriverHandler.cs" />
+    <Compile Include="Queries\Driver\List\QueryListDriverResponse.cs" />
+    <Compile Include="Queries\Driver\List\QueryListDriverValidator.cs" />
+    <Compile Include="Queries\Person\Get\QueryGetPerson.cs" />
+    <Compile Include="Queries\Person\Get\QueryGetPersonHandler.cs" />
+    <Compile Include="Queries\Person\Get\QueryGetPersonResponse.cs" />
+    <Compile Include="Queries\Person\Get\QueryGetPersonValidator.cs" />
+    <Compile Include="Queries\Person\List\QueryListPerson.cs" />
+    <Compile Include="Queries\Person\List\QueryListPersonHandler.cs" />
+    <Compile Include="Queries\Person\List\QueryListPersonResponse.cs" />
+    <Compile Include="Queries\Person\List\QueryListPersonValidator.cs" />
+    <Compile Include="Queries\Vehicle\Get\QueryGetVehicle.cs" />
+    <Compile Include="Queries\Vehicle\Get\QueryGetVehicleHandler.cs" />
+    <Compile Include="Queries\Vehicle\Get\QueryGetVehicleResponse.cs" />
+    <Compile Include="Queries\Vehicle\Get\QueryGetVehicleValidator.cs" />
+    <Compile Include="Queries\Vehicle\List\QueryListVehicle.cs" />
+    <Compile Include="Queries\Vehicle\List\QueryListVehicleHandler.cs" />
+    <Compile Include="Queries\Vehicle\List\QueryListVehicleResponse.cs" />
+    <Compile Include="Queries\Vehicle\List\QueryListVehicleValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.11.5.1\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="MediatR, Version=12.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediatR.12.0.1\lib\netstandard2.0\MediatR.dll</HintPath>
+    </Reference>
+    <Reference Include="MediatR.Contracts, Version=2.0.1.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediatR.Contracts.2.0.1\lib\netstandard2.0\MediatR.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcPaging, Version=2.1.1.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcPaging.2.1.1\lib\net40\MvcPaging.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcPaging.ObjectMapper, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcPaging.ObjectMapper.1.0.5.0\lib\MvcPaging.ObjectMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+</Project>

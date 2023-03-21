@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore.Backend.API", "EStore.Backend.API\EStore.Backend.API.csproj", "{F4AD27E2-FA77-49F9-84DB-13DD6ED0DB67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore.Backend.API.Application", "EStore.Backend.API.Aplication\EStore.Backend.API.Application.csproj", "{F044F8B9-32DD-4448-BF01-5D8761F24C21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4AD27E2-FA77-49F9-84DB-13DD6ED0DB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AD27E2-FA77-49F9-84DB-13DD6ED0DB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AD27E2-FA77-49F9-84DB-13DD6ED0DB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AD27E2-FA77-49F9-84DB-13DD6ED0DB67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F044F8B9-32DD-4448-BF01-5D8761F24C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F044F8B9-32DD-4448-BF01-5D8761F24C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F044F8B9-32DD-4448-BF01-5D8761F24C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F044F8B9-32DD-4448-BF01-5D8761F24C21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFFC7DB1-091B-4AF6-ACCD-F3FC0F7A888D}
+	EndGlobalSection
+EndGlobal
