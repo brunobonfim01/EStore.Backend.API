@@ -11,8 +11,6 @@ namespace EStore.Backend.API.Aplication.Queries.Person.List
 {
     public class QueryListPerson : IRequest<IPagedList<QueryListPersonResponse>>
     {
-        public int IdPerson { get; set; }
-
         public string Name { get; set; }
 
         public DateTime DateOfBirth { get; set; }

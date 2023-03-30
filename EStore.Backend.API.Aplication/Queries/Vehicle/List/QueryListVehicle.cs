@@ -11,8 +11,6 @@ namespace EStore.Backend.API.Aplication.Queries.Vehicle.List
 {
     public class QueryListVehicle : IRequest<IPagedList<QueryListVehicleResponse>>
     {
-        public int IdVehicle { get; set; }
-
         public string Model { get; set; }
 
         public string Plate { get; set; }

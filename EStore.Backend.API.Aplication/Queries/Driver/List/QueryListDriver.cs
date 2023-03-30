@@ -11,8 +11,6 @@ namespace EStore.Backend.API.Aplication.Queries.Driver.List
 {
     public class QueryListDriver : IRequest<IPagedList<QueryListDriverResponse>>
     {
-        public int IdDriver { get; set; }
-
         public string Name { get; set; }
 
         public DriversLicenceType DriversLicenceType { get; set; }
